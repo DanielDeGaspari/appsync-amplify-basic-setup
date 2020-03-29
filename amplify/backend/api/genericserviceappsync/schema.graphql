@@ -1,0 +1,3 @@
+type Query {
+	getComment(input: Int!): String @function(name: "getCommentsById-${env}")
+}

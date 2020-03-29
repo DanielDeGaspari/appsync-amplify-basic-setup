@@ -1,0 +1,40 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "my-authRole",
+			"UnauthRoleArn": "my-unauthRole-arn",
+			"AuthRoleArn": "my-authRole-arn",
+			"Region": "eu-west-1",
+			"DeploymentBucketName": "my-deployment-bucket",
+			"UnauthRoleName": "my-unauthRole-name",
+			"StackName": "my-stack-name",
+			"StackId": "my-stack-id",
+			"AmplifyAppId": "my-amplify-app-id"
+		}
+	},
+	"api": {
+		"genericserviceappsync": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"authConfig": {
+					"additionalAuthenticationProviders": [],
+					"defaultAuthentication": {
+						"authenticationType": "API_KEY",
+						"apiKeyConfig": {
+							"description": "Api Key",
+							"apiKeyExpirationDays": "365"
+						}
+					}
+				}
+			}
+		}
+	},
+	"function": {
+		"getCommentsById": {
+			"build": true,
+			"providerPlugin": "awscloudformation",
+			"service": "Lambda"
+		}
+	}
+}

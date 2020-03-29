@@ -1,0 +1,6 @@
+# Output
+node_modules/
+
+# Amplify
+amplify/mock-data
+*/**/build/

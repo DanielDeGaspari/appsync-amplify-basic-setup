@@ -1,0 +1,15 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "my-authRole",
+            "UnauthRoleArn": "my-unauthRole-arn",
+            "AuthRoleArn": "my-authRole-arn",
+            "Region": "eu-west-1",
+            "DeploymentBucketName": "my-deployment-bucket",
+            "UnauthRoleName": "my-unauthRole-name",
+            "StackName": "my-stack-name",
+            "StackId": "my-stack-id",
+            "AmplifyAppId": "my-amplify-app-id"
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "appsync-amplify-basic-setup",
+  "version": "0.0.1",
+  "description": "Basic setup using Amplify",
+  "author": "Daniel De Gaspari",
+  "private": true,
+  "repository": "https://github.com/DanielDeGaspari/appsync-amplify-basic-setup",
+  "bugs": {
+    "url": "https://github.com/DanielDeGaspari/appsync-amplify-basic-setup/issues"
+  },
+  "engines": {
+    "node": "~12.x",
+    "npm": "~6.x"
+  },
+  "scripts": {
+    "dev": "amplify mock",
+    "test": "echo \"Write tests!\""
+  },
+  "devDependencies": {
+    "husky": "^4.2.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "echo \"--- Starting pre-commit ---\"",
+      "pre-push": "echo \"--- Starting pre-push ---\""
+    }
+  }
+}
